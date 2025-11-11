@@ -1,0 +1,81 @@
+# GET all actors
+GET http://localhost:3000/api/actor
+
+# GET single actor (id)
+GET http://localhost:3000/api/actor/4
+
+# GET actors Order by (sort)
+GET http://localhost:3000/api/actor/sort/first_name
+
+# GET all actors by first name starting with any alphebetical letter of your choosing (letter)
+GET http://localhost:3000/api/actor/get_actors/fNameStart/r
+
+##################################################
+
+# GET all directors
+GET http://localhost:3000/api/director
+
+# GET single director (id)
+GET http://localhost:3000/api/director/4
+
+# GET directors Order by (sort)
+GET http://localhost:3000/api/director/sort/first_name
+
+# GET all directors by last name starting with any alphebetical letter of your choosing (letter)
+GET http://localhost:3000/api/director/get_directors/lNameStart/c
+
+####################################################
+
+# Get all genres
+GET http://localhost:3000/api/genre
+
+# Get total number of each genre
+GET http://localhost:3000/api/genre/amount_of_each_genre
+
+# GET genres Order by (sort)
+GET http://localhost:3000/api/actor/sort/action
+
+# GET single genre (id)
+GET http://localhost:3000/api/genre/4
+
+#######################################################
+
+# GET all movies
+GET http://localhost:3000/api/movie
+
+# GET movies Order by (sort)
+GET http://localhost:3000/api/movie/sort/rating
+
+# GET single movie (id)
+GET http://localhost:3000/api/movie/5
+
+# GET 4 oldest movies
+GET http://localhost:3000/api/movie/get_movies/4OldestMovies
+
+######################################################
+
+# GET all productions
+GET http://localhost:3000/api/production
+
+# GET total number of productions
+GET http://localhost:3000/api/get_production/totalNumProductions
+
+# GET prodcution order by (sort)
+GET http://localhost:3000/api/production/sort/production
+
+# GET single production (id)
+GET http://localhost:3000/api/production/4
+
+######################################################
+
+# GET all streaming platforms
+GET http://localhost:3000/api/streaming_platform
+
+# GET streaming platforms by (sort)
+GET http://localhost:3000/api/streaming_platform/sort/streaming_platform
+
+# GET single streaming platform (id)
+GET http://localhost:3000/api/streaming_platform/3
+
+# GET streaming platform count of each
+GET http://localhost:3000/api/streaming_platform/streaming_platform_count
