@@ -33,7 +33,7 @@ GET http://localhost:3000/api/genre
 GET http://localhost:3000/api/genre/amount_of_each_genre
 
 # GET genres Order by (sort)
-GET http://localhost:3000/api/actor/sort/action
+GET http://localhost:3000/api/actor/sort/genre
 
 # GET single genre (id)
 GET http://localhost:3000/api/genre/4
@@ -58,7 +58,7 @@ GET http://localhost:3000/api/movie/get_movies/4OldestMovies
 GET http://localhost:3000/api/production
 
 # GET total number of productions
-GET http://localhost:3000/api/get_production/totalNumProductions
+GET http://localhost:3000/api/production/get_production/totalNumProductions
 
 # GET prodcution order by (sort)
 GET http://localhost:3000/api/production/sort/production

@@ -56,7 +56,7 @@ const daoCommon = {
                 (error, dbres)=> {
                     if (!error) {
                         console.log(dbres)
-                        res.render('pages/sucess', {
+                        res.render('pages/success', {
                             title: 'Success',
                             name: 'Success'
                         })

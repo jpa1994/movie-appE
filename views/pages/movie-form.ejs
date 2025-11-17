@@ -1,0 +1,133 @@
+<%- include('../partials/header') %>
+
+<main class="main" id="main">
+    <div class="container">
+        <h2 class="text-center text-capitalize">add a movie</h2>
+        <form 
+            action="http://localhost:3000/api/movie/create" 
+            method="post"
+            class="form" 
+            id="movieForm"
+        >
+        <div class="row mb-3">
+            <div class="col-4">
+                <label for="title" class="form-label">
+                    title
+                </label>
+                <input 
+                    type="text"
+                    id="title"
+                    name="title"
+                    class="form-control"
+                />
+            </div>
+            <div class="col-4">
+                <label for="rating" class="form-label">
+                    rating
+                </label>
+                <input 
+                    type="text"
+                    id="rating"
+                    name="rating"
+                    class="form-control"
+                />
+            </div>
+            <div class="col-4">
+                <label for="runtime" class="form-label">
+                    runtime (00:00:00)
+                </label>
+                <input 
+                    type="text"
+                    id="runtime"
+                    name="runtime"
+                    class="form-control"
+                />
+            </div>
+            <div class="col-4">
+                <label for="nationality" class="form-label">
+                    nationality
+                </label>
+                <input 
+                    type="text"
+                    id="nationality"
+                    name="nationality"
+                    class="form-control"
+                />
+            </div>
+            <div class="col-4">
+                <label for="yr_released" class="form-label">
+                    year released
+                </label>
+                <input 
+                    type="text"
+                    id="yr_released"
+                    name="yr_released"
+                    class="form-control"
+                />
+            </div>
+            <div class="col-4">
+                <label for="budget" class="form-label">
+                    budget (no commas)
+                </label>
+                <input 
+                    type="text"
+                    id="budget"
+                    name="budget"
+                    class="form-control"
+                />
+            </div>
+            <div class="col-4">
+                <label for="gross" class="form-label">
+                    gross (no commas)
+                </label>
+                <input 
+                    type="text"
+                    id="gross"
+                    name="gross"
+                    class="form-control"
+                />
+            </div>
+            <div class="col">
+                <label for="production_id" class="form-label">
+                    production id
+                </label>
+                <input 
+                    type="text"
+                    id="production_id"
+                    name="production_id"
+                    class="form-control"
+                />
+            </div>
+            <div class="col">
+                <label for="showing" class="form-label">
+                    showing
+                </label>
+                <input 
+                    type="text"
+                    id="showing"
+                    name="showing"
+                    class="form-control"
+                />
+            </div>
+            <div class="col">
+                <label for="poster" class="form-label">
+                    poster
+                </label>
+                <input 
+                    type="text"
+                    id="poster"
+                    name="poster"
+                    class="form-control"
+                />
+            </div>
+        </div>
+        <button 
+            class="btn btn-primary"
+            type="submit"
+            role="button"
+        >Add Director</button>
+    </form>
+    </div>
+</main>
+
+<%- include('../partials/footer') %>
