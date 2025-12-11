@@ -27,7 +27,7 @@ const streamingPlatformDao = {
         LEFT JOIN movie_to_streaming mts
         ON sp.streaming_platform_id = mts.streaming_platform_id
         GROUP BY sp.streaming_platform_id, sp.streaming_platform
-        ORDER BY platform_count DESC`
+        ORDER BY platform_count DESC;`
 
         con.query(
             sql,
